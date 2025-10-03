@@ -203,6 +203,12 @@ class Seaplane(Plane, Ship):
             f"{Ship.__str__(self)})"
         )
 
+class Airplane(Plane):
+    def __str__(self):
+        return (
+            f"Airplane({Plane.__str__(self)})"
+        )
+
 if __name__ == "__main__":
     print(Transport((1, 2), 3, "N/A", 2025, 1))
     print(Passenger(6, 5))
@@ -216,4 +222,5 @@ if __name__ == "__main__":
     print(Boat("Atas", (22, 23), 1, "N/A", 2018, 8))
     print(PassengerShip("Eicp", (24, 25), 3, "N/A", 2017, 9, 42, 42))
     print(CargoShip("Emvn", (26, 27), 2, "N/A", 2016, 10, 43))
-    print(Seaplane(28, "Tenrehte", (29, 30), 3, "N/A", 2025, 1))
+    print(Seaplane(28, "Tenrehte", (29, 30), 3, "N/A", 2015, 11))
+    print(Airplane(31, (32, 33), 34, "N/A", 2014, 12))
